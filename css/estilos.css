@@ -49,6 +49,7 @@ main {
 }
 .fotoGal:hover {
   transform: scale(1.1);
+  overflow: hidden;
 }
 
 .btnColor {
@@ -93,7 +94,25 @@ footer .icon .instagram:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.bgNegro {
+  background-color: black;
+}
+
 @media screen and (max-width: 600px) {
+  section .fila {
+    height: fit-content;
+    height: -moz-fit-content;
+  }
+  .fotoBanner {
+    object-fit: scale-down;
+  }
+  .mainDisplay {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainDisplay .formAncho {
+    width: 100%;
+  }
   footer {
     flex-direction: column;
   }
@@ -125,9 +144,6 @@ footer .icon .instagram:hover {
   footer .redes .icon {
     font-size: 2rem;
   }
-}
-.bgNegro {
-  background-color: black;
 }
 
 /*# sourceMappingURL=estilos.css.map */
